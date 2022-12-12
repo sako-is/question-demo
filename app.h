@@ -17,13 +17,13 @@
 typedef struct Engine {
 	uint16 w;
 	uint16 h;
-    GLFWwindow* window;
-    int backend;
-    Vector entities;
+	GLFWwindow* window;
+	int backend;
+	Vector entities;
 	char* name;
 
-    void* (*Update)();
-    void* (*onStart)();
+	void* (*Update)();
+ 	void* (*onStart)();
 } Engine;
 
 /*
